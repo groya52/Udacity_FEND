@@ -1,0 +1,110 @@
+/*---------------------- Setting variables ---------------------- */
+:root {
+    --header-gap: 60px; /*using var(--header-gap);*/
+    --sidebar-width: 300px; 
+    --color-dark: darkslategrey; /*using var(--color-dark);*/
+    --background-light: azure; /*gainsboro*/
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------- Header ----------------------*/
+header {
+    background-color: var(--color-dark);
+    color: white;
+    position: fixed;
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header .icon {
+        cursor: pointer;
+    }
+
+/*---------------------- Sidebar ----------------------*/
+.sidebar {
+    position: fixed;
+    top: var(--header-gap);
+    width: var(--sidebar-width);
+    overflow: hidden;
+    background: var(--background-light);
+    transition: width 0.3s;
+    z-index: 10;
+    line-height: 1.5em;
+}
+    .sidebar.hide {
+        width: 0px;
+    }
+
+    .sidebar #input {
+        width: 100%;
+        padding: 5px 5px;
+        font-size: 22px;
+    }
+
+    .sidebar ul {
+        width: calc(var(--sidebar-width) - 10px);
+        font-size: 18px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .sidebar ul li:hover,
+    .sidebar ul li:focus {
+        color: dodgerblue;
+        padding-left: 10px;
+    }
+
+/*---------------------- Map ----------------------*/
+.map {
+    top: var(--header-gap);
+    height: calc(100% - var(--header-gap));
+    min-width: 100%;
+    position: absolute;
+}
+
+/*---------------------- Maps info window ----------------------*/
+.info {
+    width: 180px;
+    height: 100%;
+    /*background: var(--background-light);
+    border: 1px solid var(--color-dark);*/
+}
+
+.info h3 {
+    color: var(--color-dark);
+    font-size: 16px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+}
+
+.info .text {
+    color: var(--color-dark);
+    font-size: 12px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+}
+
+.info .copyright {
+    font-size: 8px;
+    /*margin: 5px 0 5px 0;*/
+    text-align: right;
+}
+
+.info h3:hover,
+.info h3:focus {
+  color: dodgerblue;
+}
+

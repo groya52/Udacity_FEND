@@ -1,0 +1,40 @@
+body {
+	background-color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+	color: black;
+	font-size: 14px;
+}
+
+.card {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid lightgrey;
+	box-shadow: 0.1em 0.1em lightgrey;
+}
+
+.header {
+	text-transform:uppercase;
+	text-align: center;
+}
+
+.picture {
+	padding: 5px 0;
+}
+
+.info {
+	padding: 10px;
+	border: 1px solid lightgrey;
+}
+
+.top {
+	font-style: italic;
+}
+
+.list {
+	list-style-type: none; /*del markers*/
+	padding: 0;
+}
+
+.label {
+  font-weight: bold;
+ }

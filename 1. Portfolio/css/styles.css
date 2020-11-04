@@ -1,0 +1,50 @@
+/*setting variables*/
+:root {
+    --font-family-main: "Montserrat", sans-serif; /*not 'Montserrat', but "Montserrat"*/
+    --text-color-main: #2d3c49;
+    --text-color-muted: #b7d97ad;
+    --text-color-additional: #02b3e4;
+}
+
+body {
+    font-family: var(--font-family-main);
+    color: var(--text-color-main);
+}
+
+
+.h4 {
+    text-transform: uppercase;
+}
+
+header, footer {
+    background-color: lightgrey;
+}
+
+path { 
+    fill: var(--text-color-additional);
+}
+
+a { 
+    color: var(--text-color-additional);
+}
+
+#credits {
+    font-style: italic;
+    font-size: xx-small;
+    text-align: right;
+    color: var(--text-color-muted); 
+}
+
+.text-muted { 
+    color: var(--text-color-muted)!important; 
+}
+
+.img-top {
+    width: 100%;
+}
+
+/*@media (max-width: 576px) {
+    #logo {
+        display: none;
+    }
+}*/
